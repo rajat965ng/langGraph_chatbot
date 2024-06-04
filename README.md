@@ -1,18 +1,4 @@
-
-### Configure poetry virtual env
-```
-poetry env use $(which python3.11) 
-```
-
-### Memory Demo
-
-![](.README_images/a1945e22.png)
-
-### Human in loop Demo
-![](.README_images/d849066c.png)
-
 # LangGraph Chatbots: A Journey into Pretending You Understand AI
-
 
 ## Introduction:
 In today's world, chatbots have become super popular. They offer a convenient way to interact with applications and services. But here's the thing: building a fancy chatbot that can handle complex conversations, integrate external tools, and keep track of everything can be a real challenge. That's where LangGraph comes in. It's a powerful Python framework that makes developing advanced language applications a breeze. In this blog post, we're going to dive into a cool Python project that shows off what LangGraph can do. We'll build a chatbot with integrated tools, memory management, and all sorts of awesome features.
