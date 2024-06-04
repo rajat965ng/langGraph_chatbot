@@ -4,14 +4,14 @@
 In today's world, chatbots have become super popular. They offer a convenient way to interact with applications and services. But here's the thing: building a fancy chatbot that can handle complex conversations, integrate external tools, and keep track of everything can be a real challenge. That's where LangGraph comes in. It's a powerful Python framework that makes developing advanced language applications a breeze. In this blog post, we're going to dive into a cool Python project that shows off what LangGraph can do. We'll build a chatbot with integrated tools, memory management, and all sorts of awesome features.
 
 ## Project Overview:
-So, let's talk about the project we'll be exploring. It's a chatbot that uses the LangGraph framework to do some really cool stuff. We're talking about incorporating the ChatOpenAI language model from Langchain, integrating external tools like the Tavily search engine, and even implementing memory management using SQLite. This chatbot is all about having natural conversations, giving you the info you need, and making sure the context stays intact throughout the whole interaction.
+So, let's talk about the project we'll be exploring. It's a chatbot that uses the LangGraph framework to do some really cool stuff. We're talking about incorporating the ChatOpenAI language model from Langchain, integrating external tools like the [Tavily]([Tavily](https://tavily.com/)) search engine, and even implementing memory management using SQLite. This chatbot is all about having natural conversations, giving you the info you need, and making sure the context stays intact throughout the whole interaction.
 
 Now, here's the deal: we're going to take this text and make it sound even more human-like. We'll keep all the important information, but we'll give it a casual and friendly tone. So, get ready to dive into this exciting project!
 
 ## Key Features:
 1. **Integration of Language Model**: This project integrates the ChatOpenAI language model, which allows the chatbot to generate responses that sound more human-like based on the ongoing conversation.
 
-2. **Tool Integration**: The chatbot is enhanced with the Tavily Search Results tool, enabling it to perform web searches and provide relevant information to users.
+2. **Tool Integration**: The chatbot is enhanced with the [Tavily](https://tavily.com/) Search Results tool, enabling it to perform web searches and provide relevant information to users.
 
 3. **Memory Management**: To maintain context across multiple interactions, the project utilizes SQLite as a memory management solution. This allows the chatbot to save and retrieve conversation history.
 
@@ -29,7 +29,7 @@ Let's take a closer look at the code and understand how this chatbot is built us
    - The project defines a `State` class using a `TypedDict` to represent the conversation state, including the list of messages exchanged between the user and the chatbot.
 
 3. **Initializing the Language Model and Tools**:
-   - The project initializes the ChatOpenAI language model and the Tavily Search Results tool.
+   - The project initializes the ChatOpenAI language model and the [Tavily](https://tavily.com/) Search Results tool.
    - The language model is connected with the tool using `llm.bind_tools(tools)`.
 
 4. **Building the Chatbot**:
@@ -37,7 +37,7 @@ Let's take a closer look at the code and understand how this chatbot is built us
 
 5. **Enhancing the Chatbot with Tools and Memory**:
    - A `StateGraph` is created, and the `chatbot` function is added as a node.
-   - A `ToolNode` is created with the Tavily Search Results tool and added to the graph.
+   - A `ToolNode` is created with the [Tavily](https://tavily.com/) Search Results tool and added to the graph.
    - Conditional edges are added between the `chatbot` and `tools` nodes using LangGraph's `tools_condition` function.
    - The `SqliteSaver` is used to enable memory management, allowing the chatbot to store conversation history in an SQLite database.
 
