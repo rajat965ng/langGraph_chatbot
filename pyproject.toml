@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "lang-graph-project"
+version = "0.1.0"
+description = ""
+authors = ["Rajat Nigam <rajatnigam89@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+black = "^24.4.2"
+langgraph = "^0.0.61"
+langsmith = "^0.1.67"
+langchain-openai = "^0.1.8"
+tavily-python = "^0.3.3"
+langchain-community = "^0.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+chatbot = "lang_graph_project.main:init"
